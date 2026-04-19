@@ -1,7 +1,7 @@
 ﻿$OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$folder = "C:\Users\12902\Nutstore\1\我的坚果云\工作\周报"
+$folder = $env:WEEKLY_REPORT_FOLDER ?? "C:\工作\周报"
 $pptxPath = Get-ChildItem $folder -Filter "丁二烯顺丁橡胶周报*.pptx" | Sort-Object Name -Descending | Select-Object -First 1 -ExpandProperty FullName
 Write-Host "Target: $pptxPath" -ForegroundColor Cyan
 $targetSlides = @(3, 14, 16, 17, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 36, 39, 42, 43, 44, 45, 46, 47, 48)
