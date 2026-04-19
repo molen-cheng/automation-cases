@@ -2,7 +2,7 @@
 """Download 2024 Vietnam customs PDFs efficiently."""
 import os, urllib.request, ssl
 
-BASE = "/home/orange/.openclaw/workspace/data/vietnam-customs/2024"
+BASE = os.environ.get("VIETNAM_DATA_DIR", "./data/vietnam-customs") + "/2024"
 ctx = ssl.create_default_context()
 
 def try_download(url, dest):

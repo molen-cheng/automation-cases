@@ -1,6 +1,6 @@
 #!/bin/bash
 # Download 2024 Vietnam customs PDFs - smart approach
-BASE="/home/orange/.openclaw/workspace/data/vietnam-customs/2024"
+BASE="${VIETNAM_DATA_DIR:-./data/vietnam-customs/2024}"
 mkdir -p $BASE/{01..12}
 
 download_if_ok() {

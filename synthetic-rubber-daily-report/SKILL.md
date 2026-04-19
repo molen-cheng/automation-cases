@@ -24,7 +24,7 @@ metadata:
 
 ### 1. 执行抓取脚本
 
-运行 `~/.local/bin/openclaw-synthetic-rubber-status all`，脚本自动处理三个品种，数据保存到 `~/.openclaw/workspace/data/{sbs|sbr|br}/{YYYY-MM-DD}.md`。非交易日无新文章时自动跳过。
+运行 `./synthetic_rubber_pw.py all`，脚本自动处理三个品种，数据保存到 `./data/{sbs|sbr|br}/{YYYY-MM-DD}.md`。非交易日无新文章时自动跳过。
 
 ### 2. 写入飞书表格
 
@@ -43,4 +43,4 @@ metadata:
 ## 数据源
 
 - 网站：隆众资讯 (oilchem.net)
-- 登录凭证：`~/.openclaw/secrets/longzhong.json`
+- 登录凭证：`./secrets.json`

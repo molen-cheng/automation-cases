@@ -12,12 +12,12 @@ import re
 import urllib.request
 import ssl
 
-BASE_DIR = "/home/orange/.openclaw/workspace/data/vietnam-customs"
+BASE_DIR = os.environ.get("VIETNAM_DATA_DIR", "./data/vietnam-customs")
 DATA_DIR = f"{BASE_DIR}/2025"
-PDFTOOL = "/home/orange/.local/mineru/bin/pdftext"
-APP_TOKEN = "LprQblSfIaNrV5sYYsscTkhGnJb"
-TABLE_TOTAL = "tblOegQocPt8nOAW"
-TABLE_COUNTRY = "tblHgi81zn0rqL2J"
+PDFTOOL = os.environ.get("PDFTOOL_PATH", "pdftext")
+APP_TOKEN = os.environ.get("FEISHU_APP_TOKEN", "")
+TABLE_TOTAL = os.environ.get("FEISHU_TABLE_TOTAL", "")
+TABLE_COUNTRY = os.environ.get("FEISHU_TABLE_COUNTRY", "")
 
 # All PDF links collected from website
 PDF_LINKS = {

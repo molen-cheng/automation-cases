@@ -55,7 +55,7 @@
 2. 从36氪、机器之心、量子位、新浪等渠道获取详细内容
 3. 按上述七个固定板块分类整理
 4. 每条新闻必须包含：标题、一句话总结、关键词、来源链接
-5. 输出完整日报到文件：~/.openclaw/workspace/AI日报-YYYY年M月D日.md
+5. 输出完整日报到文件：./AI日报-YYYY年M月D日.md
 6. **创建飞书文档** — 使用 feishu_create_doc 将日报内容创建为飞书云文档，存入「OpenClaw 内容收录」知识库（导航页 node_token: YOUR_NODE_TOKEN）
 7. **更新汇总索引** — 使用 feishu_update_doc 在汇总文档（doc_token=YOUR_DOC_TOKEN）最前面追加今日索引条目，格式：
    ```
@@ -121,5 +121,5 @@
 
 ## 文件位置
 
-- Skill文件：~/.openclaw/workspace/skills/ai-daily-report/SKILL.md
-- 日报输出：~/.openclaw/workspace/AI日报-YYYY年M月D日.md
+- Skill文件：./skills/ai-daily-report/SKILL.md
+- 日报输出：./AI日报-YYYY年M月D日.md

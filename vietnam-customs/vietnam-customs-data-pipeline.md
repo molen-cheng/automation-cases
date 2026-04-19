@@ -15,10 +15,10 @@
 
 ## 飞书表格
 
-- **App Token**: `LprQblSfIaNrV5sYYsscTkhGnJb`
-- **商品汇总表** (tblOegQocPt8nOAW): 月份、方向、品类、当月数量(吨)、当月金额(万美元)、累计数量(吨)、累计金额(万美元)、同比(%)
-- **国别明细表** (tblHgi81zn0rqL2J): 月份、方向、国家(中文)、国家(越南语)、品类、当月金额(万美元)、累计金额(万美元)、当月数量(吨)、累计数量(吨)
-- **重点追踪表** (tblMnecB9wxtsy92): 同国别表字段，仅记录 橡胶→中国(出口) + 橡胶制品→美国(出口)
+- **App Token**: 环境变量 `FEISHU_APP_TOKEN`
+- **商品汇总表**: 月份、方向、品类、当月数量(吨)、当月金额(万美元)、累计数量(吨)、累计金额(万美元)、同比(%)
+- **国别明细表**: 月份、方向、国家(中文)、国家(越南语)、品类、当月金额(万美元)、累计金额(万美元)、当月数量(吨)、累计数量(吨)
+- **重点追踪表**: 同国别表字段，仅记录 橡胶→中国(出口) + 橡胶制品→美国(出口)
 
 ## PDF URL 规律
 
@@ -44,7 +44,7 @@ https://files.customs.gov.vn/CustomsCMS/TONG_CUC/{发布年}/{月}/{日}/2025-t{
 
 ```bash
 # 按URL规律逐个下载，用curl -sI验证（200且content-length>1KB才算有效）
-# 保存到 /home/orange/.openclaw/workspace/data/vietnam-customs/{年}/{月}/
+# 保存到 {VIETNAM_DATA_DIR}/{年}/{月}/
 ```
 
 **注意事项**：
@@ -55,7 +55,7 @@ https://files.customs.gov.vn/CustomsCMS/TONG_CUC/{发布年}/{月}/{日}/2025-t{
 ### Step 2: PDF → JSON（pdftext）
 
 ```bash
-PDFTOOL="/home/orange/.local/mineru/bin/pdftext"
+PDFTOOL="{PDFTOOL_PATH}"
 $PDFTOOL --sort --json input.pdf > output.json
 ```
 
@@ -63,7 +63,7 @@ JSON结构：`pages[i].blocks[j].lines[k].spans[l].text`
 
 ### Step 3: 解析JSON
 
-**解析脚本**: `/home/orange/.openclaw/workspace/data/vietnam-customs/parse_vietnam.py`
+**解析脚本**: `parse_vietnam.py`
 
 关键解析逻辑：
 - **2x/2n（商品汇总）**: 用正则匹配 `Cao su Tấn` 和 `Sản phẩm từ cao su USD` 行

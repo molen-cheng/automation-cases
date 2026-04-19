@@ -1,8 +1,8 @@
 {
-  "script": "~/.local/bin/openclaw-synthetic-rubber-status",
+  "script": "./synthetic_rubber_pw.py",
   "script_args": "all",
-  "data_dir": "~/.openclaw/workspace/data",
-  "feishu_sheet": "https://my.feishu.cn/sheets/Cw5Us7WgOhhdmqt3GRccXpStnjg",
+  "data_dir": "./data",
+  "feishu_sheet": "",
   "date_format": "YYYY.M.DD",
   "variants": [
     {
