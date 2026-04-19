@@ -1,0 +1,74 @@
+{
+  "01-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/2/6/2025-t1-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/2/6/2025-t1-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/2/6/2025-t1-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/2/6/2025-t1-5n(vn-sb).pdf"
+  },
+  "02-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/3/6/2025-t2-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/3/6/2025-t2-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/3/6/2025-t2-5x(vn-sb).pdf",
+    "5n": "MISSING"
+  },
+  "03-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/4/4/2025-t3-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/4/4/2025-t3-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/4/4/2025-t3-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/4/4/2025-t3-5n(vn-sb).pdf"
+  },
+  "04-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/5/6/2025-t4-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/5/6/2025-t4-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/5/6/2025-t4-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/5/6/2025-t4-5n(vn-sb).pdf"
+  },
+  "05-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/6/6/2025-t5-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/6/6/2025-t5-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/6/6/2025-t5-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/6/6/2025-t5-5n(vn-sb).pdf"
+  },
+  "06-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/7/7/2025-t6-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/7/7/2025-t6-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/7/7/2025-t6-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/7/7/2025-t6-5n(vn-sb).pdf"
+  },
+  "07-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/8/6/2025-t7-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/8/6/2025-t7-2n(vn-sb).pdf",
+    "5x": "MISSING",
+    "5n": "MISSING"
+  },
+  "08-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/9/5/2025-t8-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/9/5/2025-t8-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/9/5/2025-t8-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/9/5/2025-t8-5n(vn-sb).pdf"
+  },
+  "09-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/10/6/2025-t9-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/10/6/2025-t9-2n(vn-sb).pdf",
+    "5x": "MISSING",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/10/6/2025-t9-5n(vn-sb).pdf"
+  },
+  "10-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/11/6/2025-t10-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/11/6/2025-t10-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/11/6/2025-t10-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/11/6/2025-t10-5n(vn-sb).pdf"
+  },
+  "11-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/12/8/2025-t11-2x(vn-sb).pdf",
+    "2n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/12/8/2025-t11-2n(vn-sb).pdf",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/12/8/2025-t11-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2025/12/8/2025-t11-5n(vn-sb).pdf"
+  },
+  "12-2025": {
+    "2x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2026/1/7/2025-t12-2x(vn-sb).pdf",
+    "2n": "MISSING",
+    "5x": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2026/1/7/2025-t12-5x(vn-sb).pdf",
+    "5n": "https://files.customs.gov.vn/CustomsCMS/TONG_CUC/2026/3/9/2025-t12-5n(vn-sb).pdf"
+  }
+}
