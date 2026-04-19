@@ -1,9 +1,10 @@
 ﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$folder = $env:WEEKLY_REPORT_FOLDER ?? "C:\工作\周报"
+. "$PSScriptRoot\config.ps1"
+$folder = $script:REPORT_FOLDER
 $pptxPath = Get-ChildItem $folder -Filter "丁二烯顺丁橡胶周报*.pptx" | Sort-Object Name -Descending | Select-Object -First 1 -ExpandProperty FullName
 $mappingPath = Join-Path $folder "table_mapping.xlsx"
-$excelBase = $env:EXCEL_DATA_FOLDER ?? "C:\工作"
+$excelBase = $script:EXCEL_DATA_FOLDER
 $excelDirs = @("$excelBase\丁二烯合成\数据", "$excelBase\石脑油\数据")
 $fileAlias = @{ "周度.xlsx" = "周度数据库.xlsx" }
 

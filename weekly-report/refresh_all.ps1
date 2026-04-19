@@ -1,7 +1,8 @@
 ﻿$OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$folder = $env:WEEKLY_REPORT_FOLDER ?? "C:\工作\周报"
+. "$PSScriptRoot\config.ps1"
+$folder = $script:REPORT_FOLDER
 $pptxPath = Get-ChildItem $folder -Filter "丁二烯顺丁橡胶周报*.pptx" | Sort-Object Name -Descending | Select-Object -First 1 -ExpandProperty FullName
 Write-Host "Target: $pptxPath" -ForegroundColor Cyan
 
