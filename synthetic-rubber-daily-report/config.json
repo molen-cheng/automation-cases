@@ -1,0 +1,33 @@
+{
+  "script": "~/.local/bin/openclaw-synthetic-rubber-status",
+  "script_args": "all",
+  "data_dir": "~/.openclaw/workspace/data",
+  "feishu_sheet": "https://my.feishu.cn/sheets/Cw5Us7WgOhhdmqt3GRccXpStnjg",
+  "date_format": "YYYY.M.DD",
+  "variants": [
+    {
+      "name": "SBS",
+      "subdir": "sbs",
+      "sheet": "SBS",
+      "url": "https://rubb.oilchem.net/rubber/sbs.shtml",
+      "article_pattern": "SBS生产企业装置一览表",
+      "has_category": true
+    },
+    {
+      "name": "SBR",
+      "subdir": "sbr",
+      "sheet": "SBR",
+      "url": "https://rubb.oilchem.net/361/43874/",
+      "article_pattern": "丁苯橡胶企业装置一览表",
+      "has_category": true
+    },
+    {
+      "name": "BR",
+      "subdir": "br",
+      "sheet": "BR",
+      "url": "https://list.oilchem.net/360/44347/",
+      "article_pattern": "顺丁橡胶企业装置一览表",
+      "has_category": false
+    }
+  ]
+}

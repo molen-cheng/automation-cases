@@ -1,0 +1,46 @@
+---
+name: synthetic-rubber-daily-report
+description: |
+  从隆众资讯抓取合成橡胶（SBS、SBR、BR）企业装置一览表，整理后写入飞书电子表格。
+  使用 Playwright 合并脚本一次性抓取三个品种。
+  触发词：橡胶装置日报、合成橡胶日报、装置一览表、橡胶日报。
+metadata:
+  {
+    "openclaw": {
+      "emoji": "🏭"
+    }
+  }
+---
+
+# 合成橡胶装置日报 Skill
+
+从隆众资讯抓取 SBS、SBR、BR 三个品种的企业装置一览表，按品种整理后写入飞书电子表格。
+
+## 配置文件
+
+所有品种配置、飞书表格地址等集中维护在 `config.json` 中，脚本、cron、skill 共享同一份配置。
+
+## 流程
+
+### 1. 执行抓取脚本
+
+运行 `~/.local/bin/openclaw-synthetic-rubber-status all`，脚本自动处理三个品种，数据保存到 `~/.openclaw/workspace/data/{sbs|sbr|br}/{YYYY-MM-DD}.md`。非交易日无新文章时自动跳过。
+
+### 2. 写入飞书表格
+
+读取 `config.json` 获取飞书表格地址和工作表名，对每个当日数据可用的品种：
+
+1. 使用 `feishu_sheet` 工具读取对应工作表第一行（表头行）
+2. 动态计算最后一列的列号，严禁硬编码
+3. 将当天日期（格式 `YYYY.M.DD`）写入新列表头，数据写入对应行
+4. 按企业名称匹配写入运行现状，匹配不上则留空
+5. 调用失败立即停止并报告错误
+
+### 3. 发送摘要
+
+回复各品种的非正常运行企业（即运行状态不是「正常运行」「一线运行」「两线运行生产」的企业），按品种分组列出。
+
+## 数据源
+
+- 网站：隆众资讯 (oilchem.net)
+- 登录凭证：`~/.openclaw/secrets/longzhong.json`
